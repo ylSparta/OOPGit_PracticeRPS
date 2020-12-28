@@ -6,25 +6,19 @@ namespace RockPaperScissors
     {
         public GameOfRPS() { }
 
-        public string AGameOfRPS(Object input1, Object input2)
+        public string AGameOfRPS(Rock rock, Scissors scissors)
         {
-            Rock rock = new Rock();
-            Paper paper = new Paper();
-            Scissors scissors = new Scissors();
+            return $"Rock beats Scissors";
+        }
 
-            if (input1 == rock && input2 == paper)
-            {
-                return $"Paper beats Rock";
-            }
-            if (input1 == rock && input2 == scissors)
-            {
-                return $"Rock beats Scissors";
-            }
-            if (input1 == scissors && input2 == paper)
-            {
-                return $"Scissors beats Paper";
-            }
-            else return $"Its a draw!";
+        public string AGameOfRPS(Rock rock, Paper paper)
+        {
+            return $"Paper beats Rock";
+        }
+
+        public string AGameOfRPS(Paper paper, Scissors scissors)
+        {
+            return $"Scissors beats Paper";
         }
 
 

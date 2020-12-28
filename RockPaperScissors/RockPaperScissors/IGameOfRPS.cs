@@ -6,6 +6,9 @@ namespace RockPaperScissors
 {
     public interface IGameOfRPS
     {
-        string AGameOfRPS(Object input1, Object input2);
+        string AGameOfRPS(Rock rock, Scissors scissors);
+        string AGameOfRPS(Rock rock, Paper paper);
+        string AGameOfRPS(Paper paper, Scissors scissors);
+
     }
 }
